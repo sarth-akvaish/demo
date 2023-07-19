@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_aws",
+  "info": {
+    "displayName": "aws",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "aws": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

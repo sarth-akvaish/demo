@@ -8,7 +8,7 @@ export default function Home() {
       <section className=" body-font">
         <div className="lg:w-6/6 ">
           <div className="h-96 overflow-hidden">
-            <Image alt="content" src={img1} />
+            <Image alt="content" src={img1} className="object-cover" />
           </div>
         </div>
       </section>
