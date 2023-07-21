@@ -87,7 +87,7 @@ export async function getServerSideProps(context) {
     // const login_response = await login.json();
 
     const jwt = parseCookies(context).jwt;
-    let a = await fetch("http://localhost:1337/api/products?filters[slug]=" + context.query.slug, {
+    let a = await fetch(`${process.env.API_BASE_URL}${process.env.PRODUCTS_URL}?filters[slug]=` + context.query.slug, {
         headers: {
             Authorization: `Bearer ${jwt}`
         }

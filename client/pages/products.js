@@ -89,7 +89,7 @@ export async function getServerSideProps(context) {
 
   const jwt = parseCookies(context).jwt;
 
-  let a = await fetch("http://localhost:1337/api/products",{
+  let a = await fetch(`${process.env.API_BASE_URL}${process.env.PRODUCTS_URL}`,{
     headers : {
       Authorization : `Bearer ${jwt}`
     }
